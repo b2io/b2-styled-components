@@ -13,7 +13,7 @@ function ThemedSection(props) {
 
 ThemedSection.propTypes = {
   children: PropTypes.node.isRequired,
-  theme: PropTypes.oneOf([Secondary, Primary]),
+  theme: PropTypes.oneOf(['secondary', 'primary']),
 };
 
 ThemedSection.defaultProps = {
