@@ -1,0 +1,73 @@
+{
+  "name": "b2-styled-components",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "chromatism": "^2.6.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "styled-components": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "react-scripts": "1.0.6",
+    "stylelint": "^7.10.1",
+    "stylelint-config-sass-guidelines": "^2.1.0",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-processor-styled-components": "^0.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "lint:css": "stylelint \"./src/components/**/*.js\"",
+    "eject": "react-scripts eject"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true,
+      "jasmine": true,
+      "jest": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "optionalDependencies": false
+        }
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "react/jsx-sort-props": "error",
+      "react/sort-prop-types": [
+        "error",
+        {
+          "requiredFirst": true
+        }
+      ],
+      "react/jsx-indent": [
+        2,
+        2
+      ]
+    }
+  }
+}
