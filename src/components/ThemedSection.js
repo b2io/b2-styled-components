@@ -1,23 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
-import { Primary, Secondary } from '../styles/Themes';
+import Theme from '../styles/Theme';
 
 function ThemedSection(props) {
-  const { children, theme } = props;
-  const ActiveTheme = theme === 'secondary' ? Secondary : Primary;
+  const { children } = props;
   return (
-    <ThemeProvider theme={ActiveTheme}>{children}</ThemeProvider>
+    <ThemeProvider theme={Theme}>{children}</ThemeProvider>
   );
 }
 
 ThemedSection.propTypes = {
   children: PropTypes.node.isRequired,
-  theme: PropTypes.oneOf(['secondary', 'primary']),
 };
 
 ThemedSection.defaultProps = {
-  theme: Primary,
+  theme: Theme,
 };
 
 export default ThemedSection;
