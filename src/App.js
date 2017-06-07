@@ -2,20 +2,22 @@ import React from 'react';
 import Button from './components/Button';
 import ThemedSection from './components/ThemedSection';
 
-// const Theme = Secondary;
-
 function App() {
   return (
     <div className="App">
-      <ThemedSection theme="primary">
-        <Button>
-          Primary
-        </Button>
-      </ThemedSection>
-      <ThemedSection theme="secondary">
-        <Button>
-          Secondary
-        </Button>
+      <section>
+        <p>Here is a button without context or theme</p>
+        <Button>button</Button>
+      </section>
+      <section className="example">
+        <p>Here is a button within context</p>
+        <Button>button with context</Button>
+      </section>
+      <ThemedSection>
+        <div>
+          <p>And finally here is a button within a theme provider</p>
+          <Button>button with theme</Button>
+        </div>
       </ThemedSection>
     </div>
   );
