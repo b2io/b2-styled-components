@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <section>
         <p>Here is a button without context or theme</p>
-        <Button>button in a list</Button>
+        <Button>button</Button>
       </section>
-      <section className="context">
+      <section className="example">
         <p>Here is a button within context</p>
         <Button>button with context</Button>
       </section>

@@ -20,7 +20,7 @@ const Button = styled.button`
   border-radius: 6px;
   text-transform: uppercase;
 
-  .context & { /* example of reverse selector model for context styling */
+  .example & { /* example of reverse selector model for context styling */
     border-radius: 0;
   }
 `;
