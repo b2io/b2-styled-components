@@ -1,24 +1,27 @@
 import React from 'react';
 import Button from './components/Button';
+import ComponentDisplay from './components/ComponentDisplay';
 import ThemedSection from './components/ThemedSection';
 
 function App() {
   return (
     <div className="App">
-      <section>
-        <p>Here is a button without context or theme</p>
-        <Button>button</Button>
-      </section>
-      <section className="example">
-        <p>Here is a button within context</p>
-        <Button>button with context</Button>
-      </section>
-      <ThemedSection>
+      <ComponentDisplay title="Buttons">
         <div>
-          <p>And finally here is a button within a theme provider</p>
-          <Button>button with theme</Button>
+          <p>Button with &quot;fallback&quot; styling</p>
+          <Button>button</Button>
         </div>
-      </ThemedSection>
+        <div className="example">
+          <p>Here is a button within context</p>
+          <Button>button with context</Button>
+        </div>
+        <ThemedSection>
+          <div>
+            <p>And finally here is a button within a theme provider</p>
+            <Button>button with theme</Button>
+          </div>
+        </ThemedSection>
+      </ComponentDisplay>
     </div>
   );
 }
