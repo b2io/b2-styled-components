@@ -7,22 +7,26 @@ thing is able to be interpolated later in our css (like a mixin)
 */
 const Template = css`
   /* use prop from assigned theme or fallback to a set value */
-  background-color: ${props => ((props.theme.bg) || 'transparent')}; /* theme.bg or 'transparent' */
-  border: 2px solid ${props => ((props.theme.fg) || '#000')}; /* theme.fg or black */
-  color: ${props => ((props.theme.fg) || '#000')}; /* theme.fg or black */
+  background-color: ${props => ((props.theme.fg) || 'transparent')}; /* theme.bg or 'transparent' */
+  border: 2px solid ${props => ((props.theme.bg) || '#000')}; /* theme.fg or black */
+  color: ${props => ((props.theme.bg) || '#000')}; /* theme.fg or black */
 `;
 
-const Button = styled.button`
+const TextInput = styled.input`
   ${Template}; /* call our "mixin" */
   border-radius: 6px;
   font-size: 1em;
-  font-weight: bold;
-  padding: 1em 2em;
-  text-transform: uppercase;
+  margin: 1em;
+  padding: .25em;
+
+  &::placeholder {
+    font-style: italic;
+  }
 
   .example & { /* example of reverse selector model for context styling */
     border-radius: 0;
+    margin: 0;
   }
 `;
 
-export default Button;
+export default TextInput;
