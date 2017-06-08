@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from './components/Button';
+import ComponentDisplay from './components/ComponentDisplay';
 import Textarea from './components/Textarea';
 import TextInput from './components/TextInput';
-import ComponentDisplay from './components/ComponentDisplay';
 import ThemedSection from './components/ThemedSection';
 
 function App() {

@@ -14,10 +14,10 @@ const Template = css`
 
 const Textarea = styled.textarea`
   ${Template}; /* call our "mixin" */
+  border-radius: 3px;
   font-size: 1em;
   margin: 1em;
   padding: .25em;
-  border-radius: 3px;
 
   .example & { /* example of reverse selector model for context styling */
     border-radius: 0;

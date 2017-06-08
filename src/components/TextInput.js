@@ -14,10 +14,10 @@ const Template = css`
 
 const TextInput = styled.input`
   ${Template}; /* call our "mixin" */
+  border-radius: 6px;
   font-size: 1em;
   margin: 1em;
   padding: .25em;
-  border-radius: 6px;
 
   &::placeholder {
     font-style: italic;

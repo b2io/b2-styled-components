@@ -14,10 +14,10 @@ const Template = css`
 
 const Button = styled.button`
   ${Template}; /* call our "mixin" */
+  border-radius: 6px;
   font-size: 1em;
   font-weight: bold;
   padding: 1em 2em;
-  border-radius: 6px;
   text-transform: uppercase;
 
   .example & { /* example of reverse selector model for context styling */
