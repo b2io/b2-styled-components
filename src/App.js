@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './components/Button';
+import ButtonGroup from './components/ButtonGroup';
 import ComponentDisplay from './components/ComponentDisplay';
 import Textarea from './components/Textarea';
 import TextInput from './components/TextInput';
@@ -24,6 +25,26 @@ function App() {
           </div>
         </ThemedSection>
       </ComponentDisplay>
+      <ComponentDisplay title="Button Group">
+        <div>
+          <p>Button Group with &quot;fallback&quot; styling</p>
+          <ButtonGroup>
+            <Button>Button 1</Button>
+            <Button>Button 2</Button>
+            <Button>Button 3</Button>
+          </ButtonGroup>
+        </div>
+        <ThemedSection>
+          <div>
+            <p>Button Group within a theme provider</p>
+            <ButtonGroup>
+              <Button>Button 1</Button>
+              <Button>Button 2</Button>
+              <Button>Button 3</Button>
+            </ButtonGroup>
+          </div>
+        </ThemedSection>
+      </ComponentDisplay>
       <ComponentDisplay title="Textareas">
         <div>
           <p>Textarea with &quot;fallback&quot; styling</p>
@@ -43,16 +64,16 @@ function App() {
       <ComponentDisplay title="TextInputs">
         <div>
           <p>TextInput with &quot;fallback&quot; styling</p>
-          <TextInput/>
+          <TextInput />
         </div>
         <div className="example">
           <p>Here is a TextInput within context</p>
-          <TextInput/>
+          <TextInput />
         </div>
         <ThemedSection>
           <div>
             <p>And finally here is a TextInput within a theme provider</p>
-            <TextInput/>
+            <TextInput />
           </div>
         </ThemedSection>
       </ComponentDisplay>

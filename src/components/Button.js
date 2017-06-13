@@ -20,6 +20,10 @@ const Button = styled.button`
   padding: 1em 2em;
   text-transform: uppercase;
 
+  &:focus {
+    z-index: 1;
+  }
+
   .example & { /* example of reverse selector model for context styling */
     border-radius: 0;
   }
