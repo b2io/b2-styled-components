@@ -1,9 +1,12 @@
 import React from 'react';
-import Button from './components/Button';
-import ComponentDisplay from './components/ComponentDisplay';
-import Textarea from './components/Textarea';
-import TextInput from './components/TextInput';
-import ThemedSection from './components/ThemedSection';
+
+import {
+  Button,
+  ComponentDisplay,
+  Textarea,
+  TextInput,
+  ThemedSection,
+} from './components';
 
 function App() {
   return (
@@ -43,16 +46,16 @@ function App() {
       <ComponentDisplay title="TextInputs">
         <div>
           <p>TextInput with &quot;fallback&quot; styling</p>
-          <TextInput/>
+          <TextInput />
         </div>
         <div className="example">
           <p>Here is a TextInput within context</p>
-          <TextInput/>
+          <TextInput />
         </div>
         <ThemedSection>
           <div>
             <p>And finally here is a TextInput within a theme provider</p>
-            <TextInput/>
+            <TextInput />
           </div>
         </ThemedSection>
       </ComponentDisplay>
