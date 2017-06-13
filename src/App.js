@@ -2,6 +2,7 @@ import React from 'react';
 
 import {
   Button,
+  ButtonGroup,
   ComponentDisplay,
   Textarea,
   TextInput,
@@ -24,6 +25,26 @@ function App() {
           <div>
             <p>And finally here is a button within a theme provider</p>
             <Button>button with theme</Button>
+          </div>
+        </ThemedSection>
+      </ComponentDisplay>
+      <ComponentDisplay title="Button Group">
+        <div>
+          <p>Button Group with &quot;fallback&quot; styling</p>
+          <ButtonGroup>
+            <Button>Button 1</Button>
+            <Button>Button 2</Button>
+            <Button>Button 3</Button>
+          </ButtonGroup>
+        </div>
+        <ThemedSection>
+          <div>
+            <p>Button Group within a theme provider</p>
+            <ButtonGroup>
+              <Button>Button 1</Button>
+              <Button>Button 2</Button>
+              <Button>Button 3</Button>
+            </ButtonGroup>
           </div>
         </ThemedSection>
       </ComponentDisplay>
