@@ -30,16 +30,16 @@ function App() {
       <ComponentDisplay title="Textareas">
         <div>
           <p>Textarea with &quot;fallback&quot; styling</p>
-          <Textarea defaultValue="Textarea"></Textarea>
+          <Textarea defaultValue="Textarea" />
         </div>
         <div className="example">
           <p>Here is a Textarea within context</p>
-          <Textarea defaultValue="Textarea with context"></Textarea>
+          <Textarea defaultValue="Textarea with context" />
         </div>
         <ThemedSection>
           <div>
             <p>And finally here is a Textarea within a theme provider</p>
-            <Textarea defaultValue="Textarea with theme"></Textarea>
+            <Textarea defaultValue="Textarea with theme" />
           </div>
         </ThemedSection>
       </ComponentDisplay>
