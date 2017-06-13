@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Grid from '../components/Grid';
-import Title from '../components/Title';
+import { Grid, Title } from '../components';
 
 function ComponentDisplay(props) {
   const { children, title } = props;
