@@ -97,7 +97,7 @@ function App() {
           </div>
         </ThemedSection>
       </ComponentDisplay>
-      <div id="pageEnd"></div>
+      <div id="pageEnd" />
     </div>
   );
 }
