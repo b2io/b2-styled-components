@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { em } from './../styles/Functions';
 
 /*
 here's an example of advanced interpolation using css helper
@@ -14,10 +15,10 @@ const Template = css`
 
 const Button = styled.button`
   ${Template}; /* call our "mixin" */
-  border-radius: 6px;
-  font-size: 1em;
+  border-radius: ${em(6)};
+  font-size: ${em(16)};
   font-weight: bold;
-  padding: 1em 2em;
+  padding: ${em(16)} ${em(32)};
   text-transform: uppercase;
 
   &:focus {
