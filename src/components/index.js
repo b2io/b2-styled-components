@@ -1,3 +1,4 @@
+import Anchor from './Anchor';
 import Button from './Button';
 import ButtonGroup from './ButtonGroup';
 import ComponentDisplay from './ComponentDisplay';
@@ -8,6 +9,7 @@ import ThemedSection from './ThemedSection';
 import Title from './Title';
 
 export {
+  Anchor,
   Button,
   ButtonGroup,
   ComponentDisplay,

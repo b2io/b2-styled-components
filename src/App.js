@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+  Anchor,
   Button,
   ButtonGroup,
   ComponentDisplay,
@@ -12,6 +13,22 @@ import {
 function App() {
   return (
     <div className="App">
+      <ComponentDisplay title="Anchors">
+        <div>
+          <p>Anchor with &quot;fallback&quot; styling</p>
+          <Anchor href="http://base2.io">Base Two</Anchor>
+        </div>
+        <div className="example">
+          <p>Here is a Anchor within context</p>
+          <Anchor href="http://google.com">Google</Anchor>
+        </div>
+        <ThemedSection>
+          <div>
+            <p>And finally here is a Anchor within a theme provider</p>
+            <Anchor href="#pageEnd">Scroll to end</Anchor>
+          </div>
+        </ThemedSection>
+      </ComponentDisplay>
       <ComponentDisplay title="Buttons">
         <div>
           <p>Button with &quot;fallback&quot; styling</p>
@@ -80,6 +97,7 @@ function App() {
           </div>
         </ThemedSection>
       </ComponentDisplay>
+      <div id="pageEnd"></div>
     </div>
   );
 }
