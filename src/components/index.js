@@ -3,6 +3,7 @@ import Button from './Button';
 import ButtonGroup from './ButtonGroup';
 import ComponentDisplay from './ComponentDisplay';
 import Grid from './Grid';
+import Image from './Image';
 import Textarea from './Textarea';
 import TextInput from './TextInput';
 import ThemedSection from './ThemedSection';
@@ -14,6 +15,7 @@ export {
   ButtonGroup,
   ComponentDisplay,
   Grid,
+  Image,
   Textarea,
   TextInput,
   ThemedSection,
