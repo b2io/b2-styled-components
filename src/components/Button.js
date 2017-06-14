@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-
+import ButtonGroup from './ButtonGroup';
 /*
 here's an example of advanced interpolation using css helper
 the template as interpolation to arrive at values and then the whole
@@ -24,8 +24,22 @@ const Button = styled.button`
     z-index: 1;
   }
 
-  .example & { /* example of reverse selector model for context styling */
+  ${ButtonGroup} & {
+    --border-radius: ${props => props.theme.borderRadius || 0};
+    font-size: .875em; /* TODO: remove once Grid with variable column widths completed  */
     border-radius: 0;
+
+    &:not(:first-of-type) {
+      border-left: 0;
+    }
+
+    &:first-of-type {
+      border-radius: var(--border-radius) 0 0 var(--border-radius);
+    }
+
+    &:last-of-type {
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
   }
 `;
 
