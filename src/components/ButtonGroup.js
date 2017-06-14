@@ -11,8 +11,8 @@ const ButtonGroup = styled.div`
   display: flex;
 
   ${Button} {
-    border-radius: 0;
     font-size: .875em; /* TODO: remove once Grid with variable column widths completed  */
+    border-radius: 0;
 
     &:not(:first-of-type) {
       border-left: 0;
