@@ -8,7 +8,10 @@ thing is able to be interpolated later in our css (like a mixin)
 const Template = css`
   /* use prop from assigned theme or fallback to a set value */
   background-color: ${props => ((props.theme.bg) || 'transparent')}; /* theme.bg or 'transparent' */
-  border: 2px solid ${props => ((props.theme.fg) || '#000')}; /* theme.fg or black */
+  border-bottom: ${props => ((props.theme.borderBottom) || '2px solid #000')}; /* theme.fg or black */
+  border-left: ${props => ((props.theme.borderLeft) || '2px solid #000')}; /* theme.fg or black */
+  border-right: ${props => ((props.theme.borderRight) || '2px solid #000')}; /* theme.fg or black */
+  border-top: ${props => ((props.theme.borderTop) || '2px solid #000')}; /* theme.fg or black */
   color: ${props => ((props.theme.fg) || '#000')}; /* theme.fg or black */
 `;
 
