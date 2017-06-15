@@ -22,11 +22,6 @@ const TextInput = styled.input`
   &::placeholder {
     font-style: italic;
   }
-
-  .example & { /* example of reverse selector model for context styling */
-    border-radius: 0;
-    margin: 0;
-  }
 `;
 
 export default TextInput;

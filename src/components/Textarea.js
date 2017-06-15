@@ -18,11 +18,6 @@ const Textarea = styled.textarea`
   font-size: 1em;
   margin: 1em;
   padding: .25em;
-
-  .example & { /* example of reverse selector model for context styling */
-    border-radius: 0;
-    margin: 0;
-  }
 `;
 
 export default Textarea;
