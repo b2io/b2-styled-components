@@ -38,18 +38,10 @@ class App extends Component {
             </ComponentDisplay>
             <ComponentDisplay title="Anchor">
               <div>
-                <p>Default anchor</p>
                 <Anchor href="http://base2.io">Base Two</Anchor>
-              </div>
-              <div className="example">
-                <p>Here is a Anchor within context</p>
-                <Anchor href="http://google.com">Google</Anchor>
               </div>
             </ComponentDisplay>
             <ComponentDisplay title="Button">
-              <div>
-                <Button>Default Button</Button>
-              </div>
               <div>
                 <Button>Default Button</Button>
               </div>
