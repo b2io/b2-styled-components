@@ -6,7 +6,6 @@ import Grid from './Grid';
 import Image from './Image';
 import Textarea from './Textarea';
 import TextInput from './TextInput';
-import ThemedSection from './ThemedSection';
 import Title from './Title';
 
 export {
@@ -18,6 +17,5 @@ export {
   Image,
   Textarea,
   TextInput,
-  ThemedSection,
   Title,
 };
