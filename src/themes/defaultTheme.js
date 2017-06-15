@@ -1,28 +1,18 @@
 const defaultTheme = {
-  borderRadius: {
-    base: '6px',
-  },
+  borderRadius: 0,
 
   color: {
-    accent: 'rgba(159, 4, 27, .6)',
-    primary: '#7986cb',
-    secondary: '#4dd0e1',
-    warn: '#e53935',
-    caution: 'yellow',
-    disabled: 'gray',
-    hover: '',
-    grey: {
-      1: '#333',
-      2: '#666',
-    },
+    accent: '#777',
     black: '#000',
+    primary: '#000',
+    text: '#000',
     white: '#fff',
   },
 
   font: {
     family: {
-      base: 'Arial, sans-serif',
-      accent: 'Times New Roman, serif',
+      base: 'sans-serif',
+      accent: 'serif',
     },
     size: {
       base: '16px',
