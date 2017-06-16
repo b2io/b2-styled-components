@@ -1,34 +1,35 @@
 import styled from 'styled-components';
 import { PropTypes } from 'prop-types';
 import { cond, stubTrue } from 'lodash';
+import { has } from 'lodash/fp';
 import { em } from './../styles/Functions';
 
-const template = props => ({
+const defaultStyles = props => ({
   backgroundColor: props.theme.color.accent,
   borderColor: props.theme.color.accent,
   color: props.theme.color.white,
 });
 
-const secondary = props => ({
+const secondaryStyles = props => ({
   backgroundColor: props.theme.color.white,
   borderColor: props.theme.color.accent,
   color: props.theme.color.accent,
 });
 
-const disabled = props => ({
+const disabledStyles = props => ({
   backgroundColor: props.theme.color.disabled,
   borderColor: props.theme.color.disabled,
   color: props.theme.color.white,
 });
 
-const contextToStyles = props => cond([
-  [() => props.secondary, secondary],
-  [() => props.disabled, disabled],
-  [stubTrue, template],
-])(props);
+const getContextStyles = cond([
+  [has('secondary'), secondaryStyles],
+  [has('disabled'), disabledStyles],
+  [stubTrue, defaultStyles],
+]);
 
 const Button = styled.button.attrs({
-  style: props => contextToStyles(props),
+  style: props => getContextStyles(props),
 })`
   ${props => props.style};
   font-size: ${props => em(props.theme.font.size[props.size])};
