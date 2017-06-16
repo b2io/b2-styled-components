@@ -9,8 +9,6 @@ const ButtonGroup = styled.div`
 
   ${Button} {
     border-radius: 0;
-    border-left: 1px solid ${props => props.theme.color.white};
-    border-right: 1px solid ${props => props.theme.color.white};
 
     &:not(:first-of-type) {
       border-left: 0;
@@ -18,12 +16,10 @@ const ButtonGroup = styled.div`
 
     &:first-of-type {
       border-radius: var(--border-radius) 0 0 var(--border-radius);
-      border-left: none;
     }
 
     &:last-of-type {
       border-radius: 0 var(--border-radius) var(--border-radius) 0;
-      border-right: none;
     }
   }
 `;

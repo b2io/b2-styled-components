@@ -4,6 +4,7 @@ const defaultTheme = {
   color: {
     accent: '#777',
     black: '#000',
+    disabled: '#bbb',
     primary: '#000',
     text: '#000',
     white: '#fff',
@@ -17,6 +18,7 @@ const defaultTheme = {
     size: {
       base: '16px',
       small: '14px',
+      large: '32px',
     },
   },
 
