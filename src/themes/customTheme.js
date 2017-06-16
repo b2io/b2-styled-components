@@ -2,7 +2,7 @@ const customTheme = {
   borderRadius: '6px',
 
   color: {
-    accent: 'rgba(159, 4, 27, .6)',
+    accent: '#C56876',
     black: '#353535',
     primary: '#18364C',
     text: '#333',
