@@ -55,6 +55,9 @@ class App extends Component {
                 <Button size="small">Small Button</Button>
               </div>
               <div>
+                <Button size="large">Large Button</Button>
+              </div>
+              <div>
                 <Button secondary size="small">Small, Secondary Button</Button>
               </div>
             </ComponentDisplay>
