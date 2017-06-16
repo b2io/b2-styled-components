@@ -16,6 +16,7 @@ const defaultTheme = {
     },
     size: {
       base: '16px',
+      small: '14px',
     },
   },
 

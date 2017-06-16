@@ -44,6 +44,8 @@ class App extends Component {
             <ComponentDisplay title="Button">
               <div>
                 <Button>Default Button</Button>
+                <Button secondary>Secondary Button</Button>
+                <Button small>Small Button</Button>
               </div>
             </ComponentDisplay>
             <ComponentDisplay title="Button Group">

@@ -16,6 +16,7 @@ const customTheme = {
     },
     size: {
       base: '14px',
+      small: '12px',
     },
   },
 };
