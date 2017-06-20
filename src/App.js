@@ -49,7 +49,7 @@ class App extends Component {
                 <Button secondary>Secondary Button</Button>
               </div>
               <div>
-                <Button disabled>Secondary Button</Button>
+                <Button disabled>Disabled Secondary Button</Button>
               </div>
               <div>
                 <Button size="small">Small Button</Button>
@@ -58,7 +58,7 @@ class App extends Component {
                 <Button size="large">Large Button</Button>
               </div>
               <div>
-                <Button secondary size="small">Small, Secondary Button</Button>
+                <Button secondary size="small">Small Secondary Button</Button>
               </div>
             </ComponentDisplay>
             <ComponentDisplay title="Button Group">

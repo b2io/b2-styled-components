@@ -32,12 +32,17 @@ const Button = styled.button.attrs({
   style: props => getContextStyles(props),
 })`
   ${props => props.style};
+  cursor: pointer;
   font-size: ${props => em(props.theme.font.size[props.size])};
   border: 2px solid;
   border-radius: ${props => em(props.theme.borderRadius)};
   font-weight: bold;
   padding: ${em(16)} ${em(32)};
   text-transform: uppercase;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 
   &:focus {
     z-index: 1;
