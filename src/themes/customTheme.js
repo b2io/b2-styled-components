@@ -2,7 +2,8 @@ const customTheme = {
   borderRadius: '6px',
 
   color: {
-    accent: 'rgba(159, 4, 27, .6)',
+    accent: '#C56876',
+    disabled: '#cdcdcd',
     black: '#353535',
     primary: '#18364C',
     text: '#333',
@@ -16,6 +17,8 @@ const customTheme = {
     },
     size: {
       base: '14px',
+      small: '12px',
+      large: '18px',
     },
   },
 };

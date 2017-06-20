@@ -6,6 +6,7 @@ import { Title } from '../components';
 const Box = styled.div`
   border-bottom: 1px dotted #000;
   margin: 0 auto;
+  padding-bottom: 2em;
   min-height: 150px;
   max-width: 1200px;
 

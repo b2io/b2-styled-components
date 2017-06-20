@@ -1,4 +1,5 @@
-import { isNil, stripUnits } from './Util';
+import { isNil } from 'lodash';
+import { stripUnits } from './Util';
 
 const pxTo = type => (pixelValue, context = 16) => {
   if (isNil(pixelValue)) return pixelValue;
