@@ -5,6 +5,7 @@ import {
   Button,
   ButtonGroup,
   ComponentDisplay,
+  Image,
   Textarea,
   TextInput,
   ThemedSection,
@@ -13,6 +14,22 @@ import {
 function App() {
   return (
     <div className="App">
+      <ComponentDisplay title="Images">
+        <div>
+          <p>Image with &quot;fallback&quot; styling</p>
+          <Image src="http://lorempixel.com/output/food-h-c-100-150-9.jpg" title="Two cups of parfait" />
+        </div>
+        <div className="example">
+          <p>Here is a Image within context</p>
+          <Image src="http://lorempixel.com/output/food-h-c-100-150-7.jpg" title="Several pieces of sushi" />
+        </div>
+        <ThemedSection>
+          <div>
+            <p>And finally here is a Image within a theme provider</p>
+            <Image src="http://lorempixel.com/output/food-h-c-100-150-6.jpg" title="Meat on a grill being poked by a fork" />
+          </div>
+        </ThemedSection>
+      </ComponentDisplay>
       <ComponentDisplay title="Anchors">
         <div>
           <p>Anchor with &quot;fallback&quot; styling</p>
