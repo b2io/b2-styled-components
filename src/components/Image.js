@@ -3,7 +3,7 @@ import { em } from './../styles/Functions';
 
 const Template = css`
   /* use prop from assigned theme or fallback to a set value */
-  border-color: ${props => props.theme.primary};
+  border-color: ${props => props.theme.color.primary};
   border-radius: ${props => props.theme.borderRadius};
 `;
 
