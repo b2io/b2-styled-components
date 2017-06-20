@@ -18,14 +18,6 @@ const customTheme = {
       base: '14px',
     },
   },
-
-  zindex: {
-    modal: 9000,
-    overlay: 8000,
-    tray: 7000,
-    header: 6000,
-    footer: 5000,
-  },
 };
 
 export default customTheme;
