@@ -2,17 +2,12 @@ import styled from 'styled-components';
 import Button from './Button';
 import { rem } from '../styles/Functions';
 
-/*
-  Example of using a CSS variable to reuse props.theme values in multiple
-  places. Also shows an example of styling a component (Button) inside another
-  component (ButtonGroup).
-*/
 const ButtonGroup = styled.div`
-  --border-radius: ${props => rem(props.theme.borderRadius, 14) || 0};
+  --border-radius: ${props => rem(props.theme.borderRadius, 14)};
   display: flex;
+  font-size: ${props => rem(props.theme.font.size.base)};
 
   ${Button} {
-    font-size: ${rem(14)}; /* TODO: remove once Grid with variable column widths completed  */
     border-radius: 0;
 
     &:not(:first-of-type) {

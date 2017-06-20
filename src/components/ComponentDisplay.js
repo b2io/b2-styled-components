@@ -1,6 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Title } from '../components';
+import styled from 'styled-components';
+import { Title } from '../components';
+
+const Box = styled.div`
+  border-bottom: 1px dotted #000;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  min-height: 150px;
+  max-width: 1200px;
+
+  > * {
+    margin-bottom: 10px;
+  }
+`;
 
 function ComponentDisplay(props) {
   const { children, title } = props;
@@ -9,7 +22,7 @@ function ComponentDisplay(props) {
       {title &&
         <Title>{title}</Title>
       }
-      <Grid>{children}</Grid>
+      <Box>{children}</Box>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import Color from '../styles/Color';
 
 const Title = styled.h1`
-  color: ${props => ((props.theme.fg) || Color.accent)};
+  color: ${props => props.theme.color.primary};
+  font-family: ${props => props.theme.font.family.base};
   margin: 1em auto;
   max-width: 1200px;
 `;
