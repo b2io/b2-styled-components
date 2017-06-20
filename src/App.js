@@ -49,7 +49,7 @@ class App extends Component {
                 <Button secondary>Secondary Button</Button>
               </div>
               <div>
-                <Button disabled>Disabled Secondary Button</Button>
+                <Button disabled>Disabled Button</Button>
               </div>
               <div>
                 <Button size="small">Small Button</Button>
