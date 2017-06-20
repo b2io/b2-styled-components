@@ -3,8 +3,8 @@ import { em } from './../styles/Functions';
 
 const Template = css`
   /* use prop from assigned theme or fallback to a set value */
-  border-color: ${props => ((props.theme.bg) || '#ccc')};
-  border-radius: ${props => ((props.theme.borderRadius) || '0')};
+  border-color: ${props => props.theme.bg || '#ccc'};
+  border-radius: ${props => props.theme.borderRadius || '0'};
 `;
 
 const Image = styled.img`
