@@ -21,6 +21,11 @@ const defaultTheme = {
       large: '18px',
     },
   },
+
+  bullet: {
+    ordered: 'decimal',
+    unordered: 'disc',
+  },
 };
 
 export default defaultTheme;

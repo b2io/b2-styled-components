@@ -21,6 +21,11 @@ const customTheme = {
       large: '18px',
     },
   },
+
+  bullet: {
+    ordered: 'upper-roman',
+    unordered: 'square',
+  },
 };
 
 export default customTheme;
