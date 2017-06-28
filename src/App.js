@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 import * as themes from './themes';
-import { Anchor, Button, ButtonGroup, ComponentDisplay, Image, Textarea, TextInput } from './components';
+import { Anchor, Button, ButtonGroup, ComponentDisplay, Image, Modal, Textarea, TextInput } from './components';
 
 class App extends Component {
   constructor(props) {
@@ -69,6 +69,12 @@ class App extends Component {
                   <Button>Button 3</Button>
                 </ButtonGroup>
               </div>
+            </ComponentDisplay>
+            <ComponentDisplay title="Modal">
+              <Modal>
+                <p>I am a modal.</p>
+                <Button>Cool</Button>
+              </Modal>
             </ComponentDisplay>
             <ComponentDisplay title="Textarea">
               <div>
